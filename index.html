@@ -6,7 +6,11 @@
     <meta name="keywords" content="CV, curriculum vitae, nombre, experiencia, habilidades">
     <meta name="description" content="Curriculum Vitae de [Tu Nombre], con experiencia en [tu campo profesional] y habilidades destacadas en [habilidades clave].">
     <meta name="author" content="[Tu Nombre]">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
     <title>Mi CV</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    
 </head>
 <body>
     <header>
@@ -25,8 +29,8 @@
 
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Foto de perfil" width="200" height="100" style="border-radius: 50%; display: block; margin-bottom: 1em;">
+            <h2 class="subtitle">Perfil</h2>
+            <img src="https://placehold.co/600x400/EEE/31343C" alt="Foto de perfil" id="photo" >
             <p>
                 Puedes conocer más sobre mi trayectoria visitando 
                 <a href="https://espol.edu.ec" target="_blank">el sitio web de ESPOL</a>.
@@ -46,21 +50,22 @@
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia Profesional</h2>
+            <h2 class="subtitle">Experiencia Profesional</h2>
             <p>Descripción de mi experiencia laboral, roles anteriores, y logros importantes.</p>
         </section>
 
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <p>Información sobre mi formación académica, títulos obtenidos y centros educativos donde estudié.</p>
             <section id="certificaciones">
-                <h3>Certificaciones</h3>
+                <h2 class="subtitle">Certificaciones</h2>
                 <p>Detalles sobre certificaciones relevantes que he obtenido a lo largo de mi carrera.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto?si=qqg9RB34RB-vplSe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
         </section>
-
+        
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <p>Detalles sobre mis habilidades técnicas y blandas, así como mis competencias más destacadas.</p>
             <table>
                 <tr>
@@ -82,12 +87,12 @@
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
             <p>Algunos proyectos en los que he trabajado, describiendo mis contribuciones y el impacto de los mismos.</p>
         </section>
 
         <section id="referencias">
-            <h2>Referencias</h2>
+            <h2 class="subtitle">Referencias</h2>
             <article>
                 <blockquote>
                     "Demostró una gran capacidad de liderazgo y compromiso en todos los proyectos asignados."
@@ -121,7 +126,7 @@
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Formas de contactarme: correo electrónico, redes sociales, y número de teléfono.</p>
 
             <p>Visita mi perfil profesional en <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> para más información.</p>

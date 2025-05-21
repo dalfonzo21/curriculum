@@ -1,0 +1,49 @@
+/* Aplica la fuente a todos los elementos */
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centra y pone en negrita el título principal */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'tangarine', serif;
+}
+
+/* Selector por id para #photo */
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+/* Selector por clase para .subtitle */
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
+footer p{
+    text-align: right;
+    font-style: italic;
+}
+nav > ul {
+    list-style: none;
+}
+section {
+
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd;
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+
+    /* relleno (espacio interno) de
+    1.5% en la parte superior e inferior y
+    0.8% a los lados derecho e izquierdo. */
+
+    padding: 1.5% 0.8%;
+
+    /* Margen inferior ajustado */
+    margin-bottom: 1.2rem;
+
+}
