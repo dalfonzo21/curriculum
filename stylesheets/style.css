@@ -8,6 +8,7 @@ h1 {
     text-align: center;
     font-weight: bold;
     font-family: 'tangarine', serif;
+    color: #b8e6e6;
 }
 
 /* Selector por id para #photo */
@@ -21,13 +22,56 @@ h1 {
     color: rgb(151 156 165 / 0.89);
     text-transform: uppercase;
 }
+#perfil{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+#perfil img {
+    flex: 0 0 calc(33.333% - 1rem);
+    gap: 1rem;
+}
+#perfil p {
+    flex: 0 0 calc(33.333% - 1rem);
+    margin: 0;
+    font-weight: bold;
+    color: #b8e6e6;
+}
+#perfil ol{
+    flex: 0 0 calc(33.333% - 1rem);
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #9be4e4; 
+    padding: 0.5rem 1rem; 
+}
 
 footer p{
     text-align: right;
     font-style: italic;
 }
+nav {
+   padding-top: 0.2rem;
+   padding-bottom: 0.2rem;
+   border-bottom: 3px solid #b8e6e6;
+}
+nav li {
+    font-weight: bold; /* Pone el texto en negrita */
+    color: #333; /* Color del texto */
+  
+}
 nav > ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /* Organiza los hijos en una fila horizontal */
+    align-items: center; /* Centra verticalmente los hijos en el eje transversal */
+    gap: 1rem; /* Espacio uniforme entre los elementos hijos */
 }
 section {
 
@@ -46,4 +90,44 @@ section {
     /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
 
+}
+section > form {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho disponible */
+    gap: 1rem; /* Espacio uniforme entre filas y columnas */
+    row-gap: 1rem;
+    column-gap: 1rem;
+
+}
+/*section#referencias  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+section#referencias h2 {
+    flex: 0 0 100%;
+}
+section#referencias article {
+     flex: 0 0 calc(33.333% - 1rem);
+}*/
+#referencias {
+    display: grid;
+    grid-template-areas: "sub sub sub"
+                        "art1 art2 art3";
+
+    gap: 1rem;
+        
+}
+#referencias h2 {
+    grid-area: sub;
+    text-align: center;
+    font-weight: bold;
+    margin: 0; 
+}
+#referencias > .subtitle {
+    grid-column: 1 / -1;
+}
+a {
+    color: inherit;
+    text-decoration: underline;
 }
