@@ -2,6 +2,71 @@
 * {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+#iconoEdu {
+    width: 4rem;
+    height: 4rem;
+    padding-left: 1.5rem;
+}
+#iconoExp{
+    width: 4rem;
+    height: 4rem;
+    padding-left: 1.5rem;
+    
+}
+#iconoCont{
+    width: 4rem;
+    height: 4rem;
+    padding-left: 1.5rem;
+}
+#l1{
+    background-color:aqua;
+    padding-top: 0.5em;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#l2{
+    background-color: skyblue;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#l3{
+    background-color:rgb(163, 19, 163);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#l4{
+    background-color: orange;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#l5{
+    background-color:rgb(226, 57, 57);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#l6{
+    background-color:yellow;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+section#indices {
+    display: flex;
+    align-items: center; /* Centra los hijos horizontalmente */
+    justify-content: center; /* Centra los hijos horizontalmente */
+}
 
 /* Centra y pone en negrita el título principal */
 h1 {
@@ -13,6 +78,7 @@ h1 {
 
 /* Selector por id para #photo */
 #photo {
+    padding: 1rem 2rem;
     width: 8vw;
     height: auto;
 }
@@ -22,33 +88,34 @@ h1 {
     color: rgb(151 156 165 / 0.89);
     text-transform: uppercase;
 }
-#perfil{
-    display: flex;
+#perfil {
+    display: grid;
     align-items: center;
     gap: 1rem;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+}
 
-}
-#perfil img {
-    flex: 0 0 calc(33.333% - 1rem);
-    gap: 1rem;
-}
 #perfil p {
-    flex: 0 0 calc(33.333% - 1rem);
     margin: 0;
     font-weight: bold;
-    color: #b8e6e6;
 }
-#perfil ol{
-    flex: 0 0 calc(33.333% - 1rem);
+
+#perfil ol {
     list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el padding por defecto */
     margin: 0; /* Elimina el margen por defecto */
 }
-nav ul li a {
+nav a {
+    display: flex;
     text-decoration: none; 
-    color: #9be4e4; 
-    padding: 0.5rem 1rem; 
+    color: #ffffff; 
+    padding: 1rem 1rem; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; /* Organiza los hijos en una fila horizontal */
+    color: white;
+    font-style: bold;
+    padding: 0.5rem 1rem; /* Espacio interno */
 }
 
 footer p{
@@ -58,38 +125,18 @@ footer p{
 nav {
    padding-top: 0.2rem;
    padding-bottom: 0.2rem;
-   border-bottom: 3px solid #b8e6e6;
 }
-nav li {
-    font-weight: bold; /* Pone el texto en negrita */
-    color: #333; /* Color del texto */
-  
-}
-nav > ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row; /* Organiza los hijos en una fila horizontal */
-    align-items: center; /* Centra verticalmente los hijos en el eje transversal */
-    gap: 1rem; /* Espacio uniforme entre los elementos hijos */
-}
+
+
 section {
 
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd;
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px;
-
-    /* relleno (espacio interno) de
-    1.5% en la parte superior e inferior y
-    0.8% a los lados derecho e izquierdo. */
-
-    padding: 1.5% 0.8%;
+    margin: 0 0 0 0;   /* Menos espacio externo */
+    padding: 0.0% 0.0%;
 
     /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
-
+    padding-left: 0;
+    padding-right: 0;
 }
 section > form {
     display: grid;
@@ -126,8 +173,4 @@ section#referencias article {
 }
 #referencias > .subtitle {
     grid-column: 1 / -1;
-}
-a {
-    color: inherit;
-    text-decoration: underline;
 }
