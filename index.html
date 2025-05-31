@@ -16,28 +16,37 @@
     <header>
         <h1>Mi Curriculum Vitae</h1>
         <section id="indices">
-        <nav id="l1">
-        <img src="imagenes/experience.png" id="iconoExp" >
-        <a href="#experiencia">Experiencia</a>
-        </nav>
-        <nav id="l2">
-            <img id="iconoEdu" src="imagenes/education.png" >
-            <a href="#educacion">Educación</a>
-        </nav>
-        <nav id="l3">
-            <a href="#habilidades">Habilidades</a>
-        </nav>
-        <nav id="l4">
-            <a href="#proyectos">Proyectos</a>
-        </nav>
-        <nav id="l5">
-            <a href="#referencias">Referencias</a>
-        </nav>
-        <nav id="l6">
-            <img id="iconoCont" src="imagenes/contact.png" >
-            <a href="#contacto">Contacto</a>               
-        </nav>
-        
+            
+        <a href="#experiencia" id="l1" class="item-nav">
+        <img src="imagenes/experience.png" id="iconoExp">
+        <span>Experiencia</span>
+        </a>
+
+        <a href="#educacion" id="l2" class="item-nav">
+        <img src="imagenes/education.png" id="iconoEdu">
+        <span>Educación</span>
+        </a>
+
+        <a href="#habilidades" id="l3" class="item-nav">
+        <img src="imagenes/hability.png" id="iconoHabi">
+        <span>Habilidades</span>
+        </a>
+
+        <a href="#proyectos" id="l4" class="item-nav">
+        <img src="imagenes/proyects.png" id="iconoProy">
+        <span>Proyectos</span>
+        </a>
+
+        <a href="#referencias" id="l5" class="item-nav">
+        <img src="imagenes/referencia.png" id="iconoRef">
+        <span>Referencias</span>
+        </a>
+
+        <a href="#contacto" id="l6" class="item-nav">
+        <img src="imagenes/contact.png" id="iconoCont">
+        <span>Contacto</span>
+        </a>
+
             
     </section>
     </header>
@@ -49,6 +58,8 @@
             <h2 class="subtitle">Diego Alfonzo Yagual</h2>
             
             <p>
+                Soy un profesional comprometido con la excelencia, con experiencia en desarrollo de software, gestión de proyectos y docencia. Apasionado por la tecnología y la innovación.
+                
                 Puedes conocer más sobre mi trayectoria visitando 
                 <a href="https://espol.edu.ec" target="_blank">el sitio web de ESPOL</a>.
             </p>
@@ -68,12 +79,18 @@
 
         <section id="experiencia">
             <h2 class="subtitle">Experiencia Profesional</h2>
-            <p>Descripción de mi experiencia laboral, roles anteriores, y logros importantes.</p>
+            <ul>
+            <li>Desarrollador Web - Tech Solutions (2022–2024): Desarrollo de aplicaciones web con HTML, CSS, JS y frameworks modernos.</li>
+            <li>Asistente de Docencia - ESPOL (2021–2022): Apoyo en cursos de programación y estructuras de datos.</li>
+            </ul>
         </section>
 
         <section id="educacion">
             <h2 class="subtitle">Educación</h2>
-            <p>Información sobre mi formación académica, títulos obtenidos y centros educativos donde estudié.</p>
+            <ul>
+                <li>Ingeniería en Computación - ESPOL (2019–2024)</li>
+                <li>Certificación en Desarrollo Full Stack - Platzi (2023)</li>
+            </ul>
             <section id="certificaciones">
                 <h2 class="subtitle">Certificaciones</h2>
                 <p>Detalles sobre certificaciones relevantes que he obtenido a lo largo de mi carrera.</p>
@@ -83,7 +100,11 @@
         
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
-            <p>Detalles sobre mis habilidades técnicas y blandas, así como mis competencias más destacadas.</p>
+            <ul>
+                <li>Programación en Java, Python, JavaScript</li>
+                <li>Diseño de interfaces responsivas</li>
+                <li>Trabajo en equipo y liderazgo</li>
+            </ul>
             <table>
                 <tr>
                     <th></th>
@@ -105,7 +126,10 @@
 
         <section id="proyectos">
             <h2 class="subtitle">Proyectos</h2>
-            <p>Algunos proyectos en los que he trabajado, describiendo mis contribuciones y el impacto de los mismos.</p>
+            <ul>
+            <li><strong>Gestor de Tareas Web</strong>: Aplicación web que permite a los usuarios registrar, editar y eliminar tareas.</li>
+            <li><strong>Sistema de Encuestas</strong>: Plataforma para crear y responder encuestas en tiempo real.</li>
+            </ul>
         </section>
 
         <section id="referencias">
@@ -115,7 +139,7 @@
                     "Demostró una gran capacidad de liderazgo y compromiso en todos los proyectos asignados."
                 </blockquote>
                 <p>
-                    <span>María González</span><br>
+                    <span>María González</span>
                     <span>Gerente de Proyectos en TechSolutions</span>
                     <span>María trabajó conmigo durante dos años, liderando equipos multidisciplinarios y logrando resultados sobresalientes en el desarrollo de software empresarial.</span>
                 </p>
@@ -144,13 +168,13 @@
 
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
-            <p>Formas de contactarme: correo electrónico, redes sociales, y número de teléfono.</p>
+            <p>Formas de contactarme: correo electrónico</p>
 
             <p>Visita mi perfil profesional en <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> para más información.</p>
 
             <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <label for="nombre">Nombre :</label>
+                <input type="text" id="nombre" name="nombre" aria-label="Nombre completo" required>
 
                 <label for="motivo">Motivo de contacto:</label>
                 <select id="motivo" name="motivo" required>
@@ -172,17 +196,26 @@
                     </label>
                 </fieldset>
 
-                <label for="intereses">Áreas de interés:</label>
-                <select id="intereses" name="intereses[]" multiple required>
-                    <option value="desarrollo">Desarrollo</option>
-                    <option value="diseño">Diseño</option>
-                    <option value="investigacion">Investigación</option>
-                    <option value="docencia">Docencia</option>
+                <fieldset>
+                    <legend>Áreas de interés:</legend>
+                    <label>
+                        <input type="checkbox" name="intereses[]" value="desarrollo"> Desarrollo
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="intereses[]" value="diseño"> Diseño
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="intereses[]" value="investigacion"> Investigación
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="intereses[]" value="docencia"> Docencia
+                    </label>
+                </fieldset>
+
                 </select>
 
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required aria-label="Mensaje"></textarea>
                 <button type="submit">Enviar</button>
             </form>
             <iframe 

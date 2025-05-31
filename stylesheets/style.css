@@ -1,72 +1,132 @@
 /* Aplica la fuente a todos los elementos */
 * {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#iconoEdu {
-    width: 4rem;
-    height: 4rem;
-    padding-left: 1.5rem;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
-#iconoExp{
-    width: 4rem;
-    height: 4rem;
-    padding-left: 1.5rem;
+header {
+    color: #fff;
+    padding: 20px 0;    
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+[id^="icono"] {
+    margin-right: 20px;
+    mix-blend-mode: lighten;
+    object-fit: contain;
+}
+
+
+#iconoHabi, #iconoProy, #iconoRef {
+    filter: invert(1);
     
 }
-#iconoCont{
-    width: 4rem;
-    height: 4rem;
-    padding-left: 1.5rem;
+
+#iconoEdu,
+#iconoExp,
+#iconoCont,
+#iconoHabi,
+#iconoProy,
+#iconoRef {
+    width: 2.5rem;   /* Tamaño más pequeño de íconos */
+    height: 2.5rem;
+    padding-left: 0.2rem; /* Reducir padding izquierdo */
 }
 #l1{
-    background-color:aqua;
+    background-color: #007BFF;
     padding-top: 0.5em;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 #l2{
-    background-color: skyblue;
+    background-color: #17A2B8;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 #l3{
-    background-color:rgb(163, 19, 163);
+    background-color: #6F42C1;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 #l4{
-    background-color: orange;
+    background-color: #FD7E14;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 #l5{
-    background-color:rgb(226, 57, 57);
+    background-color: #DC3545;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 #l6{
-    background-color:yellow;
+    background-color: #FFC107;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
-section#indices {
+#indices {
     display: flex;
-    align-items: center; /* Centra los hijos horizontalmente */
-    justify-content: center; /* Centra los hijos horizontalmente */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 100%;
+
 }
+
+.item-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;  
+}
+
+
+.item-nav:hover {
+  background-color: #007acc;
+}
+
+
+.item-nav span {
+  font-size: 14px;
+  justify-content: center;
+}
+
 
 /* Centra y pone en negrita el título principal */
 h1 {
@@ -74,103 +134,182 @@ h1 {
     font-weight: bold;
     font-family: 'tangarine', serif;
     color: #b8e6e6;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
 }
 
 /* Selector por id para #photo */
 #photo {
-    padding: 1rem 2rem;
-    width: 8vw;
-    height: auto;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #000000;
+    margin-bottom: 10px;
+    grid-template-areas: img;
 }
 
 /* Selector por clase para .subtitle */
 .subtitle {
-    color: rgb(151 156 165 / 0.89);
-    text-transform: uppercase;
+    color: #003366;
+    font-size: 28px;
+    border-bottom: 2px solid #005fa3;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+
 }
 #perfil {
     display: grid;
-    align-items: center;
-    gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align:justify;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    grid-template-areas:
+    "img titulo titulo titulo"
+    "parrafo parrafo ul ol";
+}
+#perfil h2 {
+    grid-area: titulo;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 #perfil p {
-    margin: 0;
-    font-weight: bold;
+    grid-area: parrafo;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 75%;
 }
 
-#perfil ol {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margen por defecto */
+#perfil ul{
+
+    grid-area: ul;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    list-style-position: inside;
 }
-nav a {
-    display: flex;
-    text-decoration: none; 
-    color: #ffffff; 
-    padding: 1rem 1rem; 
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row; /* Organiza los hijos en una fila horizontal */
-    color: white;
-    font-style: bold;
-    padding: 0.5rem 1rem; /* Espacio interno */
+#perfil ol {
+    grid-area: ol;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    list-style-position: inside;
+
+}
+a {
+    
+    font-weight: bold;
+    font-size: 0.75rem; /* Tamaño más pequeño para el texto */
+
 }
 
 footer p{
     text-align: right;
     font-style: italic;
-}
-nav {
-   padding-top: 0.2rem;
-   padding-bottom: 0.2rem;
+    font-size: 0.8rem;
+    padding: 1rem;
 }
 
 
 section {
-
-    margin: 0 0 0 0;   /* Menos espacio externo */
-    padding: 0.0% 0.0%;
-
+    max-width: 1200px;
+    border-radius: 10px;    
+    margin: 20px auto;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background-color: #fff;
     /* Margen inferior ajustado */
-    margin-bottom: 1.2rem;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+ol, ul {
+    text-align: left;
+    display: inline-block;
+    margin: 10px auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    color: #003366;
 }
 section > form {
-    display: grid;
-    grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho disponible */
-    gap: 1rem; /* Espacio uniforme entre filas y columnas */
-    row-gap: 1rem;
-    column-gap: 1rem;
-
-}
-/*section#referencias  {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
 }
-section#referencias h2 {
-    flex: 0 0 100%;
+input[type="text"],
+select,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
 }
-section#referencias article {
-     flex: 0 0 calc(33.333% - 1rem);
-}*/
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #005fa3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007acc;
+}
 #referencias {
     display: grid;
     grid-template-areas: "sub sub sub"
                         "art1 art2 art3";
 
     gap: 1rem;
-        
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
 }
 #referencias h2 {
     grid-area: sub;
     text-align: center;
     font-weight: bold;
-    margin: 0; 
+    margin: 0.5rem; 
 }
 #referencias > .subtitle {
     grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
+#referencias article {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #005fa3;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+
