@@ -8,14 +8,16 @@
     <meta name="author" content="[Tu Nombre]">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Mi CV</title>
     <link rel="stylesheet" href="stylesheets/style.css">
-    
+        
 </head>
 <body>
     <header>
         <h1>Mi Curriculum Vitae</h1>
-        <section id="indices">
+        <section id="indices" class="padre">
             
         <a href="#experiencia" id="l1" class="item-nav">
         <img src="imagenes/experience.png" id="iconoExp">
@@ -52,18 +54,170 @@
     </header>
 
     <main>
-        <section id="perfil">
-            <img src="imagenes/monumento espol.jpg" id="photo" >
+        <section id="perfil" class="padre">
+            <img src="imagenes/foto2.jpg" id="photo" >
 
             <h2 class="subtitle">Diego Alfonzo Yagual</h2>
             
             <p>
-                Soy un profesional comprometido con la excelencia, con experiencia en desarrollo de software, gestión de proyectos y docencia. Apasionado por la tecnología y la innovación.
+                Soy una persona comprometida, con experiencia en desarrollo de software y programación en Java
+                 y gestión de proyectos. Apasionado por la tecnología y la innovación.
                 
                 Puedes conocer más sobre mi trayectoria visitando 
                 <a href="https://espol.edu.ec" target="_blank">el sitio web de ESPOL</a>.
             </p>
+            
+        </section>
+           <section id="habilidades" class="padre">
+            <h2 class="subtitle">Habilidades</h2>
 
+            <section class="skill">
+                <input type="checkbox" id="skill1" class="flip-checkbox" />
+                <label for="skill1" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/html.png" alt="HTML" />
+                    <h3>HTML</h3>
+                </section>
+                <section class="card-back">
+                    <p>Conocimiento para estructurar sitios web.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill2" class="flip-checkbox" />
+                <label for="skill2" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/css.png" alt="CSS" />
+                    <h3>CSS</h3>
+                </section>
+                <section class="card-back">
+                    <p>Conocimiento  para diseñar sitios web.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill3" class="flip-checkbox" />
+                <label for="skill3" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/java.png" alt="Java" />
+                    <h3>Java</h3>
+                </section>
+                <section class="card-back">
+                    <p>Lenguaje de programación usado en los proyectos del curso.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill4" class="flip-checkbox" />
+                <label for="skill4" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/javafx.png" alt="JavaFX" />
+                    <h3>JavaFX</h3>
+                </section>
+                <section class="card-back">
+                    <p>Framework para crear interfaces gráficas usado en NetBeans.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill5" class="flip-checkbox" />
+                <label for="skill5" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/github.png" alt="GitHub" />
+                    <h3>GitHub</h3>
+                </section>
+                <section class="card-back">
+                    <p>Control de versiones y colaboración. Utilizado en todos los proyectos.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill6" class="flip-checkbox" />
+                <label for="skill6" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/vscode.png" alt="VS Code" />
+                    <h3>VS Code</h3>
+                </section>
+                <section class="card-back">
+                    <p>Entorno usado en proyectos y pruebas con otros lenguajes.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill7" class="flip-checkbox" />
+                <label for="skill7" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/netbeans.png" alt="NetBeans" />
+                    <h3>NetBeans</h3>
+                </section>
+                <section class="card-back">
+                    <p>IDE donde desarrollé proyectos con Java y JavaFX.</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill8" class="flip-checkbox" />
+                <label for="skill8" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/python.png" alt="Python" />
+                    <h3>Python</h3>
+                </section>
+                <section class="card-back">
+                    <p>Lógica de programación aprendida usando Python</p>
+                </section>
+                </label>
+            </section>
+
+            <section class="skill">
+                <input type="checkbox" id="skill9" class="flip-checkbox" />
+                <label for="skill9" class="card-inner">
+                <section class="card-front">
+                    <img src="icons/angular.png" alt="Angular" />
+                    <h3>Angular</h3>
+                </section>
+                <section class="card-back">
+                    <p>Inicio de aprendizaje para el desarrollo web moderno.</p>
+                </section>
+                </label>
+            </section>
+            </section>
+
+        <section id="experiencia" class="padre">
+            <h2 class="subtitle">Experiencia Profesional</h2>
+            <p>Durante el curso he aprendido a usar diversas tecnologías, herramientas y frameworks que han sido clave en el desarrollo de mis proyectos:
+            </p>
+
+            <ul>
+
+
+            <li>HTML & CSS: Conocimiento básico para estructurar y diseñar sitios web, aún no usados en proyectos.
+            </li>
+            <li>Java: Lenguaje de programación orientado a objetos, utilizado para desarrollar los proyectos del curso.
+            </li>
+            <li>JavaFX: Framework para crear interfaces gráficas en Java, aplicado en los proyectos desarrollados con NetBeans.
+            </li>
+            <li>GitHub: Control de versiones y colaboración, utilizado en todos mis proyectos para organizar el código.
+            </li>
+            <li>VS Code: Entorno de desarrollo que usé principalmente para proyectos pequeños y exploraciones en otros lenguajes.
+            </li>
+            <li>NetBeans: IDE en el que desarrollé la mayoría de mis proyectos en Java y JavaFX.
+            </li>
+            <li> Conocimientos básicos, sin aplicación aún en proyectos, aprendí la lógica de programación.
+            </li>
+            <li> 
+            Angular: Nivel muy básico; comencé a familiarizarme con el framework y su estructura para hacer páginas web.
+            </li>
+            Estas herramientas me han permitido construir soluciones funcionales, estéticas y bien organizadas.
+            </li>
+            </ul>
+            <section id="sobremi">
             <ol>
                 <li>Responsabilidad</li>
                 <li>Compromiso</li>
@@ -72,20 +226,13 @@
 
             <ul>
                 <li>Inglés intermedio</li>
-                <li>Disponibilidad para viajar</li>
+                <li>Aprendizaje rápido</li>
                 <li>Capacidad de adaptación</li>
             </ul>
+            </section>
         </section>
 
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia Profesional</h2>
-            <ul>
-            <li>Desarrollador Web - Tech Solutions (2022–2024): Desarrollo de aplicaciones web con HTML, CSS, JS y frameworks modernos.</li>
-            <li>Asistente de Docencia - ESPOL (2021–2022): Apoyo en cursos de programación y estructuras de datos.</li>
-            </ul>
-        </section>
-
-        <section id="educacion">
+        <section id="educacion" class="padre">
             <h2 class="subtitle">Educación</h2>
             <ul>
                 <li>Ingeniería en Computación - ESPOL (2019–2024)</li>
@@ -98,140 +245,135 @@
             </section>
         </section>
         
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <ul>
-                <li>Programación en Java, Python, JavaScript</li>
-                <li>Diseño de interfaces responsivas</li>
-                <li>Trabajo en equipo y liderazgo</li>
-            </ul>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Habilidad</th>
-                    <th>Nivel</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <td>Desarrollo Web</td>
-                    <td>Avanzado</td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>Gestión de Proyectos</td>
-                    <td>Intermedio</td>
-                </tr>
-            </table>
+ 
+        <section id="proyectos" class="padre">
+        <h2>🧪 Proyectos</h2>
+
+        <section class="proyecto">
+            <h3>🔧 HomeStay – Sistema de reservas de hospedaje</h3>
+            <p><strong>Tecnologías:</strong> Java</p>
+            <p>Desarrollé un sistema que permite a los usuarios buscar y reservar propiedades como casas, departamentos o villas. Incluye funcionalidades de pago y administración de reservas.</p>
         </section>
 
-        <section id="proyectos">
-            <h2 class="subtitle">Proyectos</h2>
-            <ul>
-            <li><strong>Gestor de Tareas Web</strong>: Aplicación web que permite a los usuarios registrar, editar y eliminar tareas.</li>
-            <li><strong>Sistema de Encuestas</strong>: Plataforma para crear y responder encuestas en tiempo real.</li>
-            </ul>
+        <section class="proyecto">
+            <h3>🧠 Sistema de gestión para tienda de morocho</h3>
+            <p><strong>Tecnologías:</strong> MySQL, JavaFX</p>
+            <p>Creé una aplicación de escritorio para ayudar a los dueños de una tienda de morocho a manejar su base de datos, visualizar ventas y gestionar el stock de productos.</p>
         </section>
 
-        <section id="referencias">
-            <h2 class="subtitle">Referencias</h2>
-            <article>
-                <blockquote>
-                    "Demostró una gran capacidad de liderazgo y compromiso en todos los proyectos asignados."
-                </blockquote>
-                <p>
-                    <span>María González</span>
-                    <span>Gerente de Proyectos en TechSolutions</span>
-                    <span>María trabajó conmigo durante dos años, liderando equipos multidisciplinarios y logrando resultados sobresalientes en el desarrollo de software empresarial.</span>
-                </p>
-            </article>
-            <article>
-                <blockquote>
-                    "Su creatividad y dedicación marcaron la diferencia en nuestro equipo."
-                </blockquote>
-                <p>
-                    <span>Carlos Pérez</span>
-                    <span>Director de Innovación en Creativa S.A.</span>
-                    <span>Carlos fue mi supervisor directo y destaca mi capacidad para aportar ideas innovadoras y resolver problemas complejos bajo presión.</span>
-                </p>
-            </article>
-            <article>
-                <blockquote>
-                    "Siempre mostró profesionalismo y una excelente actitud colaborativa."
-                </blockquote>
-                <p>
-                    <span>Lucía Ramírez</span>
-                    <span>Jefa de Recursos Humanos en GlobalCorp</span>
-                    <span>Lucía resalta mi ética de trabajo, puntualidad y habilidades interpersonales en la gestión de proyectos internacionales.</span>
-                </p>
-            </article>
+        <section class="proyecto">
+            <h3>📱 Plataforma de venta de autos</h3>
+            <p><strong>Tecnologías:</strong> JavaFX</p>
+            <p>Desarrollé una aplicación donde los usuarios pueden registrar y vender sus vehículos. Los compradores pueden buscar autos filtrando por criterios como presupuesto.</p>
         </section>
+        <section class="proyecto">
+        <h3>🦊 Akinator de animales con árboles binarios</h3>
+        <p>Tecnologías: Java, JavaFX</p>
+        <p>Implementé un juego tipo Akinator que adivina animales a través de preguntas sí/no, utilizando estructuras de datos como árboles binarios.</p>
+        </section>
+    </section>
 
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <p>Formas de contactarme: correo electrónico</p>
 
-            <p>Visita mi perfil profesional en <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> para más información.</p>
+        
 
-            <form action="#" method="post">
-                <label for="nombre">Nombre :</label>
-                <input type="text" id="nombre" name="nombre" aria-label="Nombre completo" required>
+        <section id="contacto" class="padre">
+        <h2 class="subtitle">Contacto</h2>
 
-                <label for="motivo">Motivo de contacto:</label>
-                <select id="motivo" name="motivo" required>
-                    <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="trabajo">Oferta de trabajo</option>
-                    <option value="otro">Otro</option>
-                </select>
+        <section class="contacto-contenido">
 
-                <fieldset>
-                    <legend>¿Cómo prefiere ser contactado?</legend>
-                    <label>
-                        <input type="radio" name="contacto" value="email" required>
-                        Email
-                    </label>
-                    <label>
-                        <input type="radio" name="contacto" value="telefono" required>
-                        Teléfono
-                    </label>
-                </fieldset>
+            <section class="contacto-info">
+            <p>
+                <i class="fab fa-linkedin fa-lg"></i> Visita mi perfil profesional en
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> para más información.
+            </p>
+            <section class="video-responsive">
 
-                <fieldset>
-                    <legend>Áreas de interés:</legend>
-                    <label>
-                        <input type="checkbox" name="intereses[]" value="desarrollo"> Desarrollo
-                    </label><br>
-                    <label>
-                        <input type="checkbox" name="intereses[]" value="diseño"> Diseño
-                    </label><br>
-                    <label>
-                        <input type="checkbox" name="intereses[]" value="investigacion"> Investigación
-                    </label><br>
-                    <label>
-                        <input type="checkbox" name="intereses[]" value="docencia"> Docencia
-                    </label>
-                </fieldset>
-
-                </select>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required aria-label="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2389647840497!2d-79.9678987304656!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b7e7e3e3%3A0x7b6b2b1e6e4b6e2d!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses-419!2sec!4v1716138000000!5m2!1ses-419!2sec" 
-                width="100%" 
-                height="300" 
-                style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            </section>
+        </section>
+
+            <section class="contacto-formulario">
+            <form action="javascript:void(0)" method="post" autocomplete="off">
+                <label for="nombre"><i class="fa fa-user"></i> Nombre :</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo"><i class="fa fa-question-circle"></i> Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="consulta">Consulta</option>
+                <option value="trabajo">Oferta de trabajo</option>
+                <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                <legend><i class="fa fa-envelope"></i> ¿Cómo prefiere ser contactado?</legend>
+                <label>
+                    <input type="radio" name="contacto" value="email" required> Email
+                </label>
+                <label>
+                    <input type="radio" name="contacto" value="telefono" required> Teléfono
+                </label>
+                </fieldset>
+
+                <fieldset>
+                <legend><i class="fa fa-check-square"></i> Áreas de interés:</legend>
+                <label><input type="checkbox" name="intereses[]" value="desarrollo"> Desarrollo</label><br>
+                <label><input type="checkbox" name="intereses[]" value="diseño"> Diseño</label><br>
+                <label><input type="checkbox" name="intereses[]" value="investigacion"> Investigación</label><br>
+                <label><input type="checkbox" name="intereses[]" value="docencia"> Docencia</label>
+                </fieldset>
+
+                <label for="mensaje"><i class="fa fa-comment"></i> Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit"><i class="fa fa-paper-plane"></i> Enviar</button>
+            </form>
+            </section>
+        </section>
+        </section>
+
+        <section id="referencias" class="padre">
+            <h2 class="subtitle">Referencias</h2>
+            <article>
+                <blockquote>
+                "Demostró una gran capacidad para gestionar proyectos académicos, manteniendo la calidad y los plazos establecidos."
+                </blockquote>
+                <p>
+                    <span class="n">Marlo Valle</span>
+                    <span class="ocupacion">Estudiante de Ingeniería en Computación de la Espol</span>
+                    <span class="descripcion"> Trabajó conmigo en varios proyectos de desarrollo, mostrando liderazgo efectivo en equipos y un enfoque riguroso en la solución de problemas de desarrollo.</span>
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                "Su contribución y compromiso fueron notables para la presentación de nuestros proyectos y trabajos en grupo."                </blockquote>
+                <p>
+                    <span class="n">Daniela Reyes</span>
+                    <span class="ocupacion">Estudiante de Economía de la Espol</span>
+                    <span class="descripcion">Fue un colaborador clave en actividades académicas, aportando ideas claras y demostrando habilidad para coordinar tareas y cumplir con los objetivos del equipo.
+      </span></span>
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Siempre aportó y contribuyó en los trabajos grupales, gracias a su responsabilidad y entrega de trabajos a tiempo."
+                </blockquote>
+                <p>
+                    <span class="n">Dhamar Patiño</span>
+                    <span class="ocupacion">Estudiante de Ingeniería en Computación de la Espol</span>
+                    <span class="descripcion">Destacó por su ética de trabajo, puntualidad y habilidades para comunicarse y colaborar eficazmente en proyectos académicos.</span>
+                </p>
+            </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Diego Alfonzo Yagual. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
