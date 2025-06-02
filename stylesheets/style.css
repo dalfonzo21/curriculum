@@ -11,6 +11,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    justify-content: center;
 }
 header {
     color: #47bdbd;
@@ -651,6 +652,7 @@ a {
     #introvideo {
         padding: 1.2rem 0.5rem;
         max-width: 98vw;
+        flex-direction: column;
     }
     .video-responsive {
         max-width: 98vw;
@@ -957,7 +959,7 @@ ol, ul {
 }
 @media (max-width: 600px) {
     .contacto-info iframe {
-        max-width: 98vw;
+        min-width: 150px;
         height: 120px;
         margin: 10px auto;
     }
