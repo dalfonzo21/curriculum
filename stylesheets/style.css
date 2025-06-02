@@ -653,10 +653,9 @@ a {
         padding: 1.2rem 0.5rem;
         max-width: 98vw;
         flex-direction: column;
+        
     }
-    .video-responsive {
-        max-width: 98vw;
-    }
+
     #introvideo .subtitle {
         font-size: 1.3rem;
     }
